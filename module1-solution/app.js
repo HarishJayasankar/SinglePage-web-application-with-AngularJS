@@ -13,13 +13,13 @@
 
       $scope.controller=function(){
         if( $scope.output === null ||  $scope.output === ' ' || $scope.output.length <=0 ){
-            $scope.useroutput= "null";
+            $scope.useroutput= "Please enter data first";
         }else{
              var option = $scope.output.split(',');
             if(option.length <=3){
-                $scope.useroutput="Enjoy";
+                $scope.useroutput="Enjoy!";
             }else{
-                $scope.useroutput="Full";
+                $scope.useroutput="Too much!";
             }
             option=null;
         }
